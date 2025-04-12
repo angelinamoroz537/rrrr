@@ -49,8 +49,8 @@
     }
 
     .card img {
-      width: 80px;
-      height: 80px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid white;
@@ -67,24 +67,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #0077c2;
-      font-size: 12px;
+      color: black;
+      font-size: 20px;
       text-align: center;
       padding: 5px;
     }
 
-    .clouds {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      background-color: #786fe1;
-      padding: 10px;
-    }
 
-    .clouds img {
-      width: 60px;
-      margin: 5px;
-    }
   </style>
 </head>
 <body>
@@ -145,7 +134,7 @@
     </div>
     <div class="card">
       <img src="cat3.jpg" alt="">
-      <div class="label"></div>
+      <div class="label">Сірий<br>4 місяці</div>
     </div>
     <div class="card">
       <img src="cat4.jpg" alt="">
@@ -160,12 +149,88 @@
       <div class="label">Білий<br>2 роки</div>
     </div>
   </div>
+  <html lang="uk">
+    <head>
+      <meta charset="UTF-8">
+      <title>Анкета</title>
+      <style>
+        body {
+          background-color: #ccc;
+          font-family: sans-serif;
+        }
+        .form-container {
+          width: 600px;
+          background-color: #7669e5;
+          margin: 20px auto;
+          padding: 20px;
+          border: 2px solid #aaa;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .header {
+          background-color: #54d2f0;
+          padding: 10px;
+          text-align: center;
+          font-size: 24px;
+          color: #4b0082;
+        }
+        .input-field {
+          display: block;
+          margin: 15px 0;
+          width: 90%;
+          padding: 10px;
+          font-size: 16px;
+          background-color: #b1efff;
+          border: none;
+          color: #aaa;
+        }
+        .community {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin-top: 20px;
+        }
+        .community div {
+          text-align: center;
+          color: white;
+        }
+        .community img {
+          width: 80px;
+          height: 80px;
+          display: block;
+          margin: 0 auto 5px;
+        }
+        .community-title {
+          text-align: right;
+          color: white;
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="form-container">
+        <div class="header">Анкета</div>
+        
+        <input type="text" class="input-field" placeholder="Прізвище">
+        <input type="text" class="input-field" placeholder="Ім’я">
+        <input type="text" class="input-field" placeholder="номер телефона">
+        
+        <div class="community-title">наші спільноти</div>
+        <div class="community">
+          <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+            телеграм
+          </div>
+          <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            інстаграм
+          </div>
+        </div>
+      </div>
 
-  <div class="clouds">
-    <img src="cloud1.png" alt="cloud">
-    <img src="cloud2.png" alt="cloud">
-    <img src="cloud3.png" alt="cloud">
-  </div>
 
 </body>
 </html>
