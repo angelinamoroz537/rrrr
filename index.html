@@ -148,89 +148,112 @@
       <img src="cat6.jpg" alt="">
       <div class="label">Білий<br>2 роки</div>
     </div>
-  </div>
+  </div> 
   <html lang="uk">
-    <head>
-      <meta charset="UTF-8">
-      <title>Анкета</title>
-      <style>
-        body {
-          background-color: #ccc;
-          font-family: sans-serif;
-        }
-        .form-container {
-          width: 600px;
-          background-color: #7669e5;
-          margin: 20px auto;
-          padding: 20px;
-          border: 2px solid #aaa;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-        }
-        .header {
-          background-color: #54d2f0;
-          padding: 10px;
-          text-align: center;
-          font-size: 24px;
-          color: #4b0082;
-        }
-        .input-field {
-          display: block;
-          margin: 15px 0;
-          width: 90%;
-          padding: 10px;
-          font-size: 16px;
-          background-color: #b1efff;
-          border: none;
-          color: #aaa;
-        }
-        .community {
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          margin-top: 20px;
-        }
-        .community div {
-          text-align: center;
-          color: white;
-        }
-        .community img {
-          width: 80px;
-          height: 80px;
-          display: block;
-          margin: 0 auto 5px;
-        }
-        .community-title {
-          text-align: right;
-          color: white;
-          font-size: 16px;
-          margin-bottom: 10px;
-        }
-      </style>
-    </head>
-    <body>
-      <div class="form-container">
-        <div class="header">Анкета</div>
-        
-        <input type="text" class="input-field" placeholder="Прізвище">
-        <input type="text" class="input-field" placeholder="Ім’я">
-        <input type="text" class="input-field" placeholder="номер телефона">
-        
-        <div class="community-title">наші спільноти</div>
-        <div class="community">
-          <div>
-            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
-            телеграм
-          </div>
-          <div>
-            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-            інстаграм
-          </div>
-        </div>
-      </div>
+<head>
+<meta charset="UTF-8">
+<title>Анкета</title>
+<style>
+body {
+    background-color: #b3b3b3;
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+       
+}
+  .form-container {
+    
+    background-color: #7667d0;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 600px;
+    padding: 20px;
+    text-align: center;
+  }
+  .header {
+    background-color: #80deea;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2e005c;
+    border-radius: 20px 20px 0 0;
+  }
+  .form-fields {
+    margin-top: 20px;
+  }
+  .form-fields input {
+    width: 90%;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #b2ebf2;
+    border: none;
+    border-radius: 8px;
+  }
+  .socials {
+    margin-top: 30px;
+    color: white;
+  }
+  .socials-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .social-icons div {
+    text-align: center;
+  }
+  .social-icons img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .social-icons span {
+    display: block;
+    margin-top: 5px;
+    font-size: 16px;
+  }
 
+  .f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+</head>
+<body>
+<div class="f">
+  <div class="form-container">
+  <div class="header">Анкета</div>
+  
+  <div class="form-fields">
+    <input type="text" placeholder="Прізвище">
+    <input type="text" placeholder="Ім’я">
+    <input type="text" placeholder="номер телефона">
+  </div>
+  <div class="submit-button">
+    <button type="submit">Надіслати</button>
+  </div>
+  <div class="socials">
+    <div class="socials-title">наші спільноти</div>
+    <div class="social-icons">
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="телеграм">
+        <span>телеграм</span>
+      </div>
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="інстаграм">
+        <span>інстаграм</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 </body>
 </html>
